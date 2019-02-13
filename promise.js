@@ -4,18 +4,26 @@ const posts =[
 	{title:"post 2ed", body :"This is post two"}
 ]
 
+function getDate (){
+var date= new Date();
+
+function formatDate () {};
+
+return date;
+
+}
+
+let name
+
 function getPosts() {
 	setTimeout(() => {
 		let output ='';
 		posts.forEach ((post,index) => {
-			//output += '<li>'+post.title+'</li>';
 			output += `<li>${post.title}</li>`;
 		});
 		document.body.innerHTML =output;		
 	}, 1000);
 };
-
-createPost
 
 function createPost(post,callback){
 	return new Promise(function(resolve, reject) {
