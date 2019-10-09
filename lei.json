@@ -1,0 +1,865 @@
+[
+
+    https://lei.report/LEI/213800QAUUUP6I445N30
+    
+    {
+        "LEI": {
+            "$": "213800QAUUUP6I445N30"
+        },
+        "Entity": {
+            "LegalName": {
+                "$": "LONDON STOCK EXCHANGE GROUP PLC"
+            },
+            "LegalAddress": {
+                "FirstAddressLine": {
+                    "$": "10 PATERNOSTER SQUARE"
+                },
+                "City": {
+                    "$": "LONDON"
+                },
+                "Region": {
+                    "$": "GB-LND"
+                },
+                "Country": {
+                    "$": "GB"
+                },
+                "PostalCode": {
+                    "$": "EC4M 7LS"
+                }
+            },
+            "HeadquartersAddress": {
+                "FirstAddressLine": {
+                    "$": "10 PATERNOSTER SQUARE"
+                },
+                "City": {
+                    "$": "LONDON"
+                },
+                "Region": {
+                    "$": "GB-LND"
+                },
+                "Country": {
+                    "$": "GB"
+                },
+                "PostalCode": {
+                    "$": "EC4M 7LS"
+                }
+            },
+            "RegistrationAuthority": {
+                "RegistrationAuthorityID": {
+                    "$": "RA000585"
+                },
+                "RegistrationAuthorityEntityID": {
+                    "$": "05369106"
+                }
+            },
+            "LegalJurisdiction": {
+                "$": "GB"
+            },
+            "LegalForm": {
+                "EntityLegalFormCode": {
+                    "$": "B6ES"
+                }
+            },
+            "EntityStatus": {
+                "$": "ACTIVE"
+            }
+        },
+        "Registration": {
+            "InitialRegistrationDate": {
+                "$": "2013-09-13T00:00:00Z"
+            },
+            "LastUpdateDate": {
+                "$": "2019-07-19T06:54:12.520Z"
+            },
+            "RegistrationStatus": {
+                "$": "ISSUED"
+            },
+            "NextRenewalDate": {
+                "$": "2020-09-15T00:00:00Z"
+            },
+            "ManagingLOU": {
+                "$": "213800WAVVOPS85N2205"
+            },
+            "ValidationSources": {
+                "$": "FULLY_CORROBORATED"
+            },
+            "ValidationAuthority": {
+                "ValidationAuthorityID": {
+                    "$": "RA000585"
+                },
+                "ValidationAuthorityEntityID": {
+                    "$": "05369106"
+                }
+            }
+        }
+    }
+]
+
+
+LEI                                                     213800QAUUUP6I445N30
+LegalName                                               LONDON STOCK EXCHANGE GROUP PLC
+LegalAddress.FirstAddressLine                           10 PATERNOSTER SQUARE
+LegalAddress.City                                       LONDON
+LegalAddress.Region                                     GB-LND
+LegalAddress.Country                                    GB
+LegalAddress.PostalCode                                 EC4M 7LS
+HeadquartersAddress.FirstAddressLine                    10 PATERNOSTER SQUARE
+HeadquartersAddress.City                                LONDON
+HeadquartersAddress.Region                              GB-LND
+HeadquartersAddress.Country                             GB
+HeadquartersAddress.PostalCode                          EC4M 7LS
+RegistrationAuthority.RegistrationAuthorityID           RA000585
+RegistrationAuthority.RegistrationAuthorityEntityID     05369106
+LegalJurisdiction                                       GB
+LegalForm.EntityLegalFormCode                           B6ES
+EntityStatus                                            ACTIVE
+
+
+[{"LEI":{"$":"213800D1EI4B9WTWWD28"},"Entity":{"LegalName":{"$":"LONDON STOCK EXCHANGE PLC"},"LegalAddress":{"FirstAddressLine":{"$":"10 PATERNOSTER SQUARE"},"City":{"$":"LONDON"},"Region":{"$":"GB-LND"},"Country":{"$":"GB"},"PostalCode":{"$":"EC4M 7LS"}},"HeadquartersAddress":{"FirstAddressLine":{"$":"10 PATERNOSTER SQUARE"},"City":{"$":"LONDON"},"Region":{"$":"GB-LND"},"Country":{"$":"GB"},"PostalCode":{"$":"EC4M 7LS"}},"RegistrationAuthority":{"RegistrationAuthorityID":{"$":"RA000585"},"RegistrationAuthorityEntityID":{"$":"02075721"}},"LegalJurisdiction":{"$":"GB"},"LegalForm":{"EntityLegalFormCode":{"$":"B6ES"}},"EntityStatus":{"$":"ACTIVE"}},"Registration":{"InitialRegistrationDate":{"$":"2013-09-13T00:00:00Z"},"LastUpdateDate":{"$":"2019-07-22T13:51:59.557Z"},"RegistrationStatus":{"$":"ISSUED"},"NextRenewalDate":{"$":"2020-09-18T00:00:00Z"},"ManagingLOU":{"$":"213800WAVVOPS85N2205"},"ValidationSources":{"$":"FULLY_CORROBORATED"},"ValidationAuthority":{"ValidationAuthorityID":{"$":"RA000585"},"ValidationAuthorityEntityID":{"$":"02075721"}}}}]
+["213800D1EI4B9WTWWD28", "LONDON STOCK EXCHANGE PLC", "10 PATERNOSTER SQUARE", "LONDON", "GB-LND", "GB", "EC4M 7LS", "2013-09-13T00:00:00Z", "2019-07-22T13:51:59.557Z", "ISSUED", "2020-09-18T00:00:00Z", "213800WAVVOPS85N2205", "FULLY_CORROBORATED", "RA000585", "02075721"]
+
+[ value.LEI['$'], value.Entity.LegalName['$'], value.Entity.LegalAddress.FirstAddressLine['$'], value.Entity.LegalAddress.City['$'], value.Entity.LegalAddress.Region['$'], value.Entity.LegalAddress.Country['$'], value.Entity.LegalAddress.PostalCode['$'], value.Registration.InitialRegistrationDate['$'], value.Registration.LastUpdateDate['$'], value.Registration.RegistrationStatus['$'], value.Registration.NextRenewalDate['$'], value.Registration.ManagingLOU['$'], value.Registration.ValidationSources['$'], value.Registration.ValidationAuthority.ValidationAuthorityID['$'], value.Registration.ValidationAuthority.ValidationAuthorityEntityID['$'] ]
+
+CALL apoc.load.json('https://leilookup.gleif.org/api/v2/leirecords?lei=213800D1EI4B9WTWWD28') YIELD value 
+return [
+value.LEI['$'],
+value.Entity.LegalName['$'],
+value.Entity.LegalAddress.FirstAddressLine['$'],
+value.Entity.LegalAddress.City['$'],
+value.Entity.LegalAddress.Region['$'],
+value.Entity.LegalAddress.Country['$'],
+value.Entity.LegalAddress.PostalCode['$'],
+value.Registration.InitialRegistrationDate['$'],
+value.Registration.LastUpdateDate['$'],
+value.Registration.RegistrationStatus['$'],
+value.Registration.NextRenewalDate['$'],
+value.Registration.ManagingLOU['$'],
+value.Registration.ValidationSources['$'],
+value.Registration.ValidationAuthority.ValidationAuthorityID['$'],
+value.Registration.ValidationAuthority.ValidationAuthorityEntityID['$']
+]
+
+
+CALL apoc.load.json('https://leilookup.gleif.org/api/v2/leirecords?lei=213800QAUUUP6I445N30') YIELD value 
+return [
+value.LEI['$'],
+value.Entity.LegalName['$'],
+value.Entity.LegalAddress.FirstAddressLine['$'],
+value.Entity.LegalAddress.City['$'],
+value.Entity.LegalAddress.Region['$'],
+value.Entity.LegalAddress.Country['$'],
+value.Entity.LegalAddress.PostalCode['$'],
+value.Registration.InitialRegistrationDate['$'],
+value.Registration.LastUpdateDate['$'],
+value.Registration.RegistrationStatus['$'],
+value.Registration.NextRenewalDate['$'],
+value.Registration.ManagingLOU['$'],
+value.Registration.ValidationSources['$'],
+value.Registration.ValidationAuthority.ValidationAuthorityID['$'],
+value.Registration.ValidationAuthority.ValidationAuthorityEntityID['$']
+]
+https://lei.report/LEI/213800QAUUUP6I445N30
+https://leilookup.gleif.org/api/v2/leirecords?lei=213800QAUUUP6I445N30
+
+https://lei.report/LEI/213800D1EI4B9WTWWD28
+https://leilookup.gleif.org/api/v2/leirecords?lei=213800D1EI4B9WTWWD28
+L E I	                                                213800D1EI4B9WTWWD28
+Legal Name	                                            LONDON STOCK EXCHANGE PLC
+RegistrationAuthority.RegistrationAuthorityID           RA000585
+RegistrationAuthority.RegistrationAuthorityEntityID     02075721
+LegalJurisdiction 	                                    GB
+LegalForm.EntityLegalFormCode	                        B6ES
+EntityStatus	                                                ACTIVE
+Initial Date	                                        2013-09-12 20:00:00
+Last Update Date	                                    2019-07-22 13:51:59
+Status	                                                ISSUED
+Next Renewal Date	                                    2020-09-17 20:00:00
+Managing L O U	                                        213800WAVVOPS85N2205 [LONDON STOCK EXCHANGE LEI LIMITED]
+Validation Sources	                                    FULLY_CORROBORATED
+Validation Authority Validation Authority I D	        RA000585
+Validation Authority Validation Authority I D	        02075721
+Companies House Search:	                                London Stock Exchange Plc 
+
+LEI                                                                 
+LegalName                                              
+LegalAddress.FirstAddressLine                          
+LegalAddress.City                                      
+LegalAddress.Region                                    
+LegalAddress.Country                                   
+LegalAddress.PostalCode                                
+HeadquartersAddress.FirstAddressLine                   
+HeadquartersAddress.City                               
+HeadquartersAddress.Region                             
+HeadquartersAddress.Country                            
+HeadquartersAddress.PostalCode                         
+RegistrationAuthority.RegistrationAuthorityID          
+RegistrationAuthority.RegistrationAuthorityEntityID    
+LegalJurisdiction                                      
+LegalForm.EntityLegalFormCode                          
+EntityStatus                                           
+
+
+https://api.opencorporates.com/companies/gb/06795359?format=json
+return [
+    value.results.company.company_type,
+    value.results.company.registered_address.locality,
+    value.results.company.registered_address.street_address,
+    value.results.company.registered_address.country,
+    value.results.company.registered_address.region,
+    value.results.company.registered_address.postal_code,
+    value.results.company.
+
+    
+    value.Entity.LegalName['$'],
+    value.Entity.LegalAddress.FirstAddressLine['$'],
+    value.Entity.LegalAddress.City['$'],
+    value.Entity.LegalAddress.Region['$'],
+    value.Entity.LegalAddress.Country['$'],
+    value.Entity.LegalAddress.PostalCode['$'],
+    value.Registration.InitialRegistrationDate['$'],
+    value.Registration.LastUpdateDate['$'],
+    value.Registration.RegistrationStatus['$'],
+    value.Registration.NextRenewalDate['$'],
+    value.Registration.ManagingLOU['$'],
+    value.Registration.ValidationSources['$'],
+    value.Registration.ValidationAuthority.ValidationAuthorityID['$'],
+    value.Registration.ValidationAuthority.ValidationAuthorityEntityID['$']
+    ]
+
+
+{
+    "api_version": "0.4.8",
+    "results": {
+      "company": {
+        "company_type": "Private Limited Company",
+        "registered_address": {
+          "locality": "London",
+          "street_address": "10 Paternoster Square",
+          "country": "United Kingdom",
+          "region": null,
+          "postal_code": "EC4M 7LS"
+        },
+        "agent_name": null,
+        "data": null,
+        "branch_status": null,
+        "created_at": "2010-10-22T16:54:42+00:00",
+        "retrieved_at": "2019-06-29T13:12:51+00:00",
+        "source": {
+          "publisher": "UK Companies House",
+          "retrieved_at": "2019-06-29T13:12:51+00:00",
+          "terms": "UK Crown Copyright",
+          "url": "http://xmlgw.companieshouse.gov.uk/"
+        },
+        "previous_registration_entities": [],
+        "alternative_names": [],
+        "branch": null,
+        "home_company": null,
+        "industry_codes": [
+          {
+            "industry_code": {
+              "description": "Non-trading company",
+              "code_scheme_name": "UK SIC Classification 2007",
+              "uid": "uk_sic_2007-7499",
+              "code": "74.99",
+              "code_scheme_id": "uk_sic_2007"
+            }
+          },
+          {
+            "industry_code": {
+              "description": "Other professional, scientific and technical activities n.e.c.",
+              "code_scheme_name": "European Community NACE Rev 2",
+              "uid": "eu_nace_2-749",
+              "code": "74.9",
+              "code_scheme_id": "eu_nace_2"
+            }
+          },
+          {
+            "industry_code": {
+              "description": "Other professional, scientific and technical activities n.e.c.",
+              "code_scheme_name": "UN ISIC Rev 4",
+              "uid": "isic_4-749",
+              "code": "749",
+              "code_scheme_id": "isic_4"
+            }
+          }
+        ],
+        "filings": [
+          {
+            "filing": {
+              "date": "2019-01-29",
+              "uid": "MzIyNTY1NTA1NWFkaXF6a2N4",
+              "description": "Confirmation statement made on 2019-01-20 with no updates",
+              "id": 590677195,
+              "title": "Confirmation Statement",
+              "filing_type_name": "Confirmation Statement",
+              "filing_type_code": "CS01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/590677195"
+            }
+          },
+          {
+            "filing": {
+              "date": "2018-05-02",
+              "uid": "MzIwNDA3MjA3OGFkaXF6a2N4",
+              "description": "Full accounts made up to 2017-12-31",
+              "id": 551457812,
+              "title": "Annual Accounts",
+              "filing_type_name": "Annual Accounts",
+              "filing_type_code": "AA",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/551457812"
+            }
+          },
+          {
+            "filing": {
+              "date": "2018-01-29",
+              "uid": "MzE5NjM2NzQ2NGFkaXF6a2N4",
+              "description": "Confirmation statement made on 2018-01-20 with updates",
+              "id": 535060377,
+              "title": "Confirmation Statement",
+              "filing_type_name": "Confirmation Statement",
+              "filing_type_code": "CS01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/535060377"
+            }
+          },
+          {
+            "filing": {
+              "date": "2017-11-29",
+              "uid": "MzE5MTQzNzQxOGFkaXF6a2N4",
+              "description": "Termination of appointment of Xavier Robert Rolet as a director on 2017-11-28",
+              "id": 523815009,
+              "title": "Termination of appointment of director ",
+              "filing_type_name": "Termination of appointment of director ",
+              "filing_type_code": "TM01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/523815009"
+            }
+          },
+          {
+            "filing": {
+              "date": "2017-10-16",
+              "uid": "MzE4Nzg4NTA1NGFkaXF6a2N4",
+              "description": "Statement of capital following an allotment of shares on 2017-09-19",
+              "id": 523815011,
+              "title": "Return of allotment of shares",
+              "filing_type_name": "Return of allotment of shares",
+              "filing_type_code": "SH01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/523815011"
+            }
+          },
+          {
+            "filing": {
+              "date": "2017-05-10",
+              "uid": "MzE3NTM2NTg3MmFkaXF6a2N4",
+              "description": "Full accounts made up to 2016-12-31",
+              "id": 479636919,
+              "title": "Annual Accounts",
+              "filing_type_name": "Annual Accounts",
+              "filing_type_code": "AA",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/479636919"
+            }
+          },
+          {
+            "filing": {
+              "date": "2017-01-26",
+              "uid": "MzE2NzQxODYwOGFkaXF6a2N4",
+              "description": "Confirmation statement made on 2017-01-20 with updates",
+              "id": 464162093,
+              "title": "Confirmation Statement",
+              "filing_type_name": "Confirmation Statement",
+              "filing_type_code": "CS01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/464162093"
+            }
+          },
+          {
+            "filing": {
+              "date": "2016-05-12",
+              "uid": "MzE0ODIxOTY2NmFkaXF6a2N4",
+              "description": "Full accounts made up to 2015-12-31",
+              "id": 380245436,
+              "title": "Annual Accounts",
+              "filing_type_name": "Annual Accounts",
+              "filing_type_code": "AA",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/380245436"
+            }
+          },
+          {
+            "filing": {
+              "date": "2016-02-16",
+              "uid": "MzE0MTg5NDE2N2FkaXF6a2N4",
+              "description": "Annual return made up to 2016-01-20 with full list of shareholders",
+              "id": 327988334,
+              "title": "Annual Return",
+              "filing_type_name": "Annual Return",
+              "filing_type_code": "AR01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/327988334"
+            }
+          },
+          {
+            "filing": {
+              "date": "2015-10-01",
+              "uid": "MzEzMTc0MjM1MmFkaXF6a2N4",
+              "description": "Full accounts made up to 2014-12-31",
+              "id": 241591180,
+              "title": "Annual Accounts",
+              "filing_type_name": "Annual Accounts",
+              "filing_type_code": "AA",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591180"
+            }
+          },
+          {
+            "filing": {
+              "date": "2015-08-12",
+              "uid": "MzEyODg2NjEwM2FkaXF6a2N4",
+              "description": "Termination of appointment of Massimo Tononi as a director on 2015-08-07",
+              "id": 241591182,
+              "title": "Termination of appointment of director ",
+              "filing_type_name": "Termination of appointment of director ",
+              "filing_type_code": "TM01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591182"
+            }
+          },
+          {
+            "filing": {
+              "date": "2015-01-27",
+              "uid": "MzExNjE1OTc4N2FkaXF6a2N4",
+              "description": "Annual return made up to 2015-01-20 with full list of shareholders",
+              "id": 241591184,
+              "title": "Annual Return",
+              "filing_type_name": "Annual Return",
+              "filing_type_code": "AR01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591184"
+            }
+          },
+          {
+            "filing": {
+              "date": "2014-09-16",
+              "uid": "MzEwNzU2ODY4NmFkaXF6a2N4",
+              "description": "",
+              "id": 241591186,
+              "title": "Filing dated 2014-09-16",
+              "filing_type_name": null,
+              "filing_type_code": "MISC",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591186"
+            }
+          },
+          {
+            "filing": {
+              "date": "2014-09-09",
+              "uid": "MzEwNzE2OTcwMGFkaXF6a2N4",
+              "description": "Auditor's resignation",
+              "id": 241591187,
+              "title": "Filing dated 2014-09-09",
+              "filing_type_name": null,
+              "filing_type_code": "AUD",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591187"
+            }
+          },
+          {
+            "filing": {
+              "date": "2014-08-30",
+              "uid": "MzEwNjA5OTQ0OGFkaXF6a2N4",
+              "description": "Full accounts made up to 2014-03-31",
+              "id": 241591189,
+              "title": "Annual Accounts",
+              "filing_type_name": "Annual Accounts",
+              "filing_type_code": "AA",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591189"
+            }
+          },
+          {
+            "filing": {
+              "date": "2014-07-22",
+              "uid": "MzEwNDE1ODI5MmFkaXF6a2N4",
+              "description": "Current accounting period shortened from 2015-03-31 to 2014-12-31",
+              "id": 241591191,
+              "title": "Change of accounting reference date",
+              "filing_type_name": "Change of accounting reference date",
+              "filing_type_code": "AA01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591191"
+            }
+          },
+          {
+            "filing": {
+              "date": "2014-01-29",
+              "uid": "MzA5MzU0NzU2OWFkaXF6a2N4",
+              "description": "Annual return made up to 2014-01-20 with full list of shareholders",
+              "id": 241591193,
+              "title": "Annual Return",
+              "filing_type_name": "Annual Return",
+              "filing_type_code": "AR01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591193"
+            }
+          },
+          {
+            "filing": {
+              "date": "2013-09-25",
+              "uid": "MzA4NTc0NTcwOWFkaXF6a2N4",
+              "description": "Full accounts made up to 2013-03-31",
+              "id": 241591194,
+              "title": "Annual Accounts",
+              "filing_type_name": "Annual Accounts",
+              "filing_type_code": "AA",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591194"
+            }
+          },
+          {
+            "filing": {
+              "date": "2013-09-11",
+              "uid": "MzA4NDg0MDI3N2FkaXF6a2N4",
+              "description": "Termination of appointment of Janet Cohen as a director",
+              "id": 241591196,
+              "title": "Termination of appointment of director ",
+              "filing_type_name": "Termination of appointment of director ",
+              "filing_type_code": "TM01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591196"
+            }
+          },
+          {
+            "filing": {
+              "date": "2013-02-01",
+              "uid": "MzA3MjEyMDUwMmFkaXF6a2N4",
+              "description": "Annual return made up to 2013-01-20 with full list of shareholders",
+              "id": 241591198,
+              "title": "Annual Return",
+              "filing_type_name": "Annual Return",
+              "filing_type_code": "AR01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591198"
+            }
+          },
+          {
+            "filing": {
+              "date": "2012-11-27",
+              "uid": "MzA2ODI0NDY0NmFkaXF6a2N4",
+              "description": "Full accounts made up to 2012-03-31",
+              "id": 241591199,
+              "title": "Annual Accounts",
+              "filing_type_name": "Annual Accounts",
+              "filing_type_code": "AA",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591199"
+            }
+          },
+          {
+            "filing": {
+              "date": "2012-07-18",
+              "uid": "MzA2MTAwNTU5MmFkaXF6a2N4",
+              "description": "Appointment of David Porter Warren as a director",
+              "id": 241591201,
+              "title": "Appointment of director",
+              "filing_type_name": "Appointment of director",
+              "filing_type_code": "AP01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591201"
+            }
+          },
+          {
+            "filing": {
+              "date": "2012-07-10",
+              "uid": "MzA2MDU2NzU0MGFkaXF6a2N4",
+              "description": "Termination of appointment of Douglas Webb as a director",
+              "id": 241591203,
+              "title": "Termination of appointment of director ",
+              "filing_type_name": "Termination of appointment of director ",
+              "filing_type_code": "TM01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591203"
+            }
+          },
+          {
+            "filing": {
+              "date": "2012-02-21",
+              "uid": "MzA1Mjc5OTY0OGFkaXF6a2N4",
+              "description": "Annual return made up to 2012-01-20 with full list of shareholders",
+              "id": 241591205,
+              "title": "Annual Return",
+              "filing_type_name": "Annual Return",
+              "filing_type_code": "AR01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591205"
+            }
+          },
+          {
+            "filing": {
+              "date": "2011-12-15",
+              "uid": "MzA0OTA0MDAzMGFkaXF6a2N4",
+              "description": "Full accounts made up to 2011-03-31",
+              "id": 241591207,
+              "title": "Annual Accounts",
+              "filing_type_name": "Annual Accounts",
+              "filing_type_code": "AA",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591207"
+            }
+          },
+          {
+            "filing": {
+              "date": "2011-09-27",
+              "uid": "MzA0NDUxNzc4MmFkaXF6a2N4",
+              "description": "Appointment of Massimo Tononi as a director",
+              "id": 241591208,
+              "title": "Appointment of director",
+              "filing_type_name": "Appointment of director",
+              "filing_type_code": "AP01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591208"
+            }
+          },
+          {
+            "filing": {
+              "date": "2011-09-21",
+              "uid": "MzA0NDE4NDg2N2FkaXF6a2N4",
+              "description": "Termination of appointment of Angelo Tantazzi as a director",
+              "id": 241591210,
+              "title": "Termination of appointment of director ",
+              "filing_type_name": "Termination of appointment of director ",
+              "filing_type_code": "TM01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591210"
+            }
+          },
+          {
+            "filing": {
+              "date": "2011-02-16",
+              "uid": "MzAzMjM3NTI2NGFkaXF6a2N4",
+              "description": "Annual return made up to 2011-01-20 with full list of shareholders",
+              "id": 241591211,
+              "title": "Annual Return",
+              "filing_type_name": "Annual Return",
+              "filing_type_code": "AR01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591211"
+            }
+          },
+          {
+            "filing": {
+              "date": "2010-09-15",
+              "uid": "MzAyMzM1MzUzN2FkaXF6a2N4",
+              "description": "Full accounts made up to 2010-03-31",
+              "id": 241591213,
+              "title": "Annual Accounts",
+              "filing_type_name": "Annual Accounts",
+              "filing_type_code": "AA",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591213"
+            }
+          },
+          {
+            "filing": {
+              "date": "2010-05-11",
+              "uid": "MzAxNTMwMjQwMWFkaXF6a2N4",
+              "description": "Appointment of Raffaele Carlo Jerusalmi as a director",
+              "id": 241591215,
+              "title": "Appointment of director",
+              "filing_type_name": "Appointment of director",
+              "filing_type_code": "AP01",
+              "url": null,
+              "opencorporates_url": "https://opencorporates.com/statements/241591215"
+            }
+          }
+        ],
+        "inactive": false,
+        "updated_at": "2019-06-29T13:12:51+00:00",
+        "controlling_entity": null,
+        "ultimate_beneficial_owners": [],
+        "financial_summary": null,
+        "jurisdiction_code": "gb",
+        "previous_names": [
+          {
+            "end_date": "2009-03-25",
+            "company_name": "LONDON STOCK EXCHANGE GROUP HOLDINGS (OVERSEAS) LIMITED",
+            "start_date": "2009-01-20"
+          }
+        ],
+        "trademark_registrations": [],
+        "incorporation_date": "2009-01-20",
+        "opencorporates_url": "https://opencorporates.com/companies/gb/06795359",
+        "officers": [
+          {
+            "officer": {
+              "end_date": null,
+              "uid": null,
+              "occupation": "COMPANY SECRETARY",
+              "inactive": false,
+              "name": "LISA MARGARET CONDRON",
+              "current_status": null,
+              "id": 187456048,
+              "position": "secretary",
+              "opencorporates_url": "https://opencorporates.com/officers/187456048",
+              "start_date": "2009-03-30"
+            }
+          },
+          {
+            "officer": {
+              "end_date": "2010-03-31",
+              "uid": null,
+              "occupation": "PRESIDENT AND CEO",
+              "inactive": true,
+              "name": "CAIO MASSIMO CAPUANO",
+              "current_status": null,
+              "id": 187456058,
+              "position": "director",
+              "opencorporates_url": "https://opencorporates.com/officers/187456058",
+              "start_date": "2009-03-30"
+            }
+          },
+          {
+            "officer": {
+              "end_date": "2013-09-11",
+              "uid": null,
+              "occupation": "DIRECTOR",
+              "inactive": true,
+              "name": "JANET COHEN",
+              "current_status": null,
+              "id": 187456073,
+              "position": "director",
+              "opencorporates_url": "https://opencorporates.com/officers/187456073",
+              "start_date": "2009-03-30"
+            }
+          },
+          {
+            "officer": {
+              "end_date": "2009-03-30",
+              "uid": null,
+              "occupation": "COMPANY SECRETARY",
+              "inactive": true,
+              "name": "LISA MARGARET CONDRON",
+              "current_status": null,
+              "id": 187456085,
+              "position": "director",
+              "opencorporates_url": "https://opencorporates.com/officers/187456085",
+              "start_date": "2009-01-20"
+            }
+          },
+          {
+            "officer": {
+              "end_date": null,
+              "uid": null,
+              "occupation": "CEO BORSA ITALIANA & DIRECTOR OF CAPITAL",
+              "inactive": false,
+              "name": "RAFFAELE CARLO JERUSALMI",
+              "current_status": null,
+              "id": 187456096,
+              "position": "director",
+              "opencorporates_url": "https://opencorporates.com/officers/187456096",
+              "start_date": "2010-04-01"
+            }
+          },
+          {
+            "officer": {
+              "end_date": "2011-09-20",
+              "uid": null,
+              "occupation": "CHAIRMAN",
+              "inactive": true,
+              "name": "ANGELO TANTAZZI",
+              "current_status": null,
+              "id": 187456126,
+              "position": "director",
+              "opencorporates_url": "https://opencorporates.com/officers/187456126",
+              "start_date": "2009-03-30"
+            }
+          },
+          {
+            "officer": {
+              "end_date": "2009-03-30",
+              "uid": null,
+              "occupation": "SOLICITOR",
+              "inactive": true,
+              "name": "CATHERINE ANNE THOMAS",
+              "current_status": null,
+              "id": 187456135,
+              "position": "director",
+              "opencorporates_url": "https://opencorporates.com/officers/187456135",
+              "start_date": "2009-01-20"
+            }
+          },
+          {
+            "officer": {
+              "end_date": "2015-08-07",
+              "uid": null,
+              "occupation": "COMPANTY DIRECTOR",
+              "inactive": true,
+              "name": "MASSIMO TONONI",
+              "current_status": null,
+              "id": 187456151,
+              "position": "director",
+              "opencorporates_url": "https://opencorporates.com/officers/187456151",
+              "start_date": "2011-09-20"
+            }
+          },
+          {
+            "officer": {
+              "end_date": null,
+              "uid": null,
+              "occupation": "CHIEF FINANCIAL OFFICER",
+              "inactive": false,
+              "name": "DAVID PORTER WARREN",
+              "current_status": null,
+              "id": 187456156,
+              "position": "director",
+              "opencorporates_url": "https://opencorporates.com/officers/187456156",
+              "start_date": "2012-07-17"
+            }
+          },
+          {
+            "officer": {
+              "end_date": "2012-07-02",
+              "uid": null,
+              "occupation": "CHIEF FINANCIAL OFFICER",
+              "inactive": true,
+              "name": "DOUGLAS RUSSELL WEBB",
+              "current_status": null,
+              "id": 187456165,
+              "position": "director",
+              "opencorporates_url": "https://opencorporates.com/officers/187456165",
+              "start_date": "2009-01-20"
+            }
+          },
+          {
+            "officer": {
+              "end_date": "2017-11-28",
+              "uid": null,
+              "occupation": "DIRECTOR",
+              "inactive": true,
+              "name": "XAVIER ROBERT ROLET",
+              "current_status": null,
+              "id": 275230230,
+              "position": "director",
+              "opencorporates_url": "https://opencorporates.com/officers/275230230",
+              "start_date": "2009-03-30"
+            }
+          }
+        ],
+        "registry_url": "https://beta.companieshouse.gov.uk/company/06795359",
+        "identifiers": [],
+        "native_company_number": null,
+        "agent_address": null,
+        "corporate_groupings": [],
+        "alternate_registration_entities": [],
+        "company_number": "06795359",
+        "number_of_employees": null,
+        "registered_address_in_full": "10 Paternoster Square, London, EC4M 7LS",
+        "name": "LONDON STOCK EXCHANGE GROUP HOLDINGS (ITALY) LIMITED",
+        "current_status": "Active",
+        "subsequent_registration_entities": [],
+        "dissolution_date": null
+      }
+    }
+  }
