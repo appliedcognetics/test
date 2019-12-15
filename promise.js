@@ -139,7 +139,7 @@ Array.prototype = {
 Array.prototype.print = function () {console.log(this.toString())};
 let ab= [1,2,"VVV"];
 ab.print();
-ab.print2();
+
 
 //
 

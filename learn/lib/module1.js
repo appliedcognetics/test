@@ -1,5 +1,7 @@
 // lib/module1.js
-
+/**
+ * 
+ */
 exports.a = 1;
 
 require('./module2');
